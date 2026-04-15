@@ -1,0 +1,112 @@
+Loaded rows: 953
+
+Columns used:
+['track_name', 'artist(s)_name', 'bpm', 'danceability_%', 'energy_%', 'speechiness_%', 'acousticness_%', 'key', 'mode']
+
+=== Quantitative feature summaries ===
+
+bpm
+count    953.000000
+mean     122.540399
+std       28.057802
+min       65.000000
+25%      100.000000
+50%      121.000000
+75%      140.000000
+max      206.000000
+Name: bpm, dtype: float64
+Typical middle-50% range: 100.00 to 140.00
+
+danceability_%
+count    953.00000
+mean      66.96957
+std       14.63061
+min       23.00000
+25%       57.00000
+50%       69.00000
+75%       78.00000
+max       96.00000
+Name: danceability_%, dtype: float64
+Typical middle-50% range: 57.00 to 78.00
+
+energy_%
+count    953.000000
+mean      64.279119
+std       16.550526
+min        9.000000
+25%       53.000000
+50%       66.000000
+75%       77.000000
+max       97.000000
+Name: energy_%, dtype: float64
+Typical middle-50% range: 53.00 to 77.00
+
+speechiness_%
+count    953.000000
+mean      10.131165
+std        9.912888
+min        2.000000
+25%        4.000000
+50%        6.000000
+75%       11.000000
+max       64.000000
+Name: speechiness_%, dtype: float64
+Typical middle-50% range: 4.00 to 11.00
+
+acousticness_%
+count    953.000000
+mean      27.057712
+std       25.996077
+min        0.000000
+25%        6.000000
+50%       18.000000
+75%       43.000000
+max       97.000000
+Name: acousticness_%, dtype: float64
+Typical middle-50% range: 6.00 to 43.00
+
+=== Categorical feature summaries ===
+
+key
+key
+C#     120
+G       96
+NaN     95
+G#      91
+F       89
+B       81
+D       81
+A       75
+F#      73
+E       62
+A#      57
+D#      33
+Name: count, dtype: int64
+Most common value: C#
+
+mode
+mode
+Major    550
+Minor    403
+Name: count, dtype: int64
+Most common value: Major
+
+=== Proposed guaranteed smash hit profile ===
+Key: C#
+Mode: Major
+BPM: 100 to 140
+Danceability: 57 to 78
+Energy: 53 to 77
+Speechiness: 4 to 11
+Acousticness: 6 to 43
+
+=== Songs that match all criteria ===
+        track_name artist(s)_name    streams  in_spotify_charts  in_apple_charts
+Ginseng Strip 2002      Yung Lean  240769997                  0                0
+      Need To Know       Doja Cat 1042568408                  0               36
+
+=== Example known smash hit comparison ===
+     track_name artist(s)_name    streams  bpm key  mode  danceability_%  energy_%  speechiness_%  acousticness_%
+Blinding Lights     The Weeknd 3703895074  171  C# Major              50        80              7               0
+
+Charts saved to: /mnt/data/DataVisualizationLabSolution/DataVisualizationLab/output
